@@ -246,17 +246,7 @@ namespace WordParser
         // Отправить фидбек разработчику
         private void btnFeedback_Click(object sender, EventArgs e)
         {
-            //Process.Start("mailto:SBalykov@kng.beeline.ru?subject=" + this.Text);
-        
-            
-
-
-
-
-        
-        
-        
-        
+            Process.Start("mailto:SBalykov@kng.beeline.ru?subject=" + this.Text);
         }
 
 
