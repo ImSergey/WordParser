@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 
@@ -246,7 +247,7 @@ namespace WordParser
         // Отправить фидбек разработчику
         private void btnFeedback_Click(object sender, EventArgs e)
         {
-            Process.Start("mailto:SBalykov@kng.beeline.ru?subject=" + this.Text);
+            Process.Start(Encoding.UTF8.GetString(Convert.FromBase64String(@"bWFpbHRvOlNCYWx5a292QGtuZy5iZWVsaW5lLnJ1P3N1YmplY3Q9")) + this.Text);
         }
 
 
