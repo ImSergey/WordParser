@@ -135,7 +135,7 @@ namespace WordParser
         }
 
 
-        // Вывод списока слов и их количества (ТОР ..., с сортировкой по убыванию)
+        // Вывод списока найденных слов и их количества (ТОР ..., с сортировкой по убыванию)
         public List<KeyValuePair<string, int>> GetResult(int iWordCount)
         {
             return cdResults.OrderByDescending(p => p.Value).Take(iWordCount).ToList(); 
